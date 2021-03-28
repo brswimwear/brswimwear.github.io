@@ -264,7 +264,7 @@ ul li::marker {
     #slide-wrapper{
         max-width: 80%;
         min-height: 70%;
-        margin-top: -5%;
+        margin-top: -10%;
     }
 
     .arrow{
