@@ -256,6 +256,8 @@ ul li::marker {
     .thumbnail{
         max-width: 40%;
         max-height: 70%;
+        margin:auto;
+        height: auto;
     
     }
 
