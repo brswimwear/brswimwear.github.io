@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimwear</title>
+    <!-- bootstrap5 -->
+  
+
+    <link rel="stylesheet" href="items.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<!-- montserrat font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<!-- price font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="icon" href="../images/output-onlinepngtools.ico">
+</head>
+<body>
+    <h4 class="BR-SWIMWEAR">BR-SWIMWEAR</h4>
+    
+    <h6><a href="../Swimwear-page/swimwear.html" class="margin-decoration underline">Swimwear‏‏‎</a><a href="#" class="margin-decoration">Women</a></h6>
+    
+
+    <!-- GRID -->
+    <!-- <div class="grid"> -->
+    <div class="thing">
+<span><a class="link-to-swmr" href="../Swimwear-page/swimwear.html">Swimwear</a></span><span>  ‏‏‎ ‎> ‏‏‎ ‎V.2</span>
+    </div>
+
+<!-- <div class="grid"> -->
+<div class="grid">
+    <div class="col-6">
+        <img src="../../images/s6.png" id="featured" alt="photo of the item">
+
+
+        
+
+        <div id="slide-wrapper" >
+            <img id="slideLeft" class="arrow" src="../../images/arrow-left.png">
+
+            <div id="slider">
+                <img src="../../images/s6.png" class="thumbnail active" alt="photo of the item">
+                <img src="../../images/s4test.png" class="thumbnail" alt="photo of the item">
+                <img src="../../images/s3test.png" class="thumbnail" alt="photo of the item">
+                <img src="../../images/s2test.png" class="thumbnail" alt="photo of the item">
+                <img src="../../images/s1test.png" class="thumbnail" alt="photo of the item">
+            </div>
+
+            <img id="slideRight" class="arrow" src="../../images/arrow-right.png">
+        </div>
+    </div>
+    <div class="text">
+        <h1 class="text-title col-6">V.2</h1>
+        <h4>$54.00</h4>
+        <ul>
+        <li>Biquíni truangular com detalhes franzidos a lilás</li>
+        <li>Detalhes metálicos dourados</li>
+        <li>Alças ajustáveis</li>
+        <li>Cintura subida reversível</li>
+        <li>Opçāo de colocar copa</li>
+        </ul>
+        <!-- button -->
+        <a href="https://www.instagram.com/beatrizracha_swimwear/" target="_blank" class="button">Envia-me mensagem no instagram para comprar!</a>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="footercss">
+      <p class="footer-p footer-text" style="font-size:14px">Made in Portugal with &#128156;</p>                                                            
+          <a href="https://www.instagram.com/beatrizracha_swimwear/" target="_blank">
+            <img src="../../images/insta.png" class="insta" alt="instagram"></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+		let thumbnails = document.getElementsByClassName('thumbnail')
+
+		let activeImages = document.getElementsByClassName('active')
+
+		for (var i=0; i < thumbnails.length; i++){
+
+			thumbnails[i].addEventListener('mouseover', function(){
+				console.log(activeImages)
+				
+				if (activeImages.length > 0){
+					activeImages[0].classList.remove('active')
+				}
+				
+
+				this.classList.add('active')
+				document.getElementById('featured').src = this.src
+			})
+
+            thumbnails[i].addEventListener('click', function(){
+				console.log(activeImages)
+				
+				if (activeImages.length > 0){
+					activeImages[0].classList.remove('active')
+				}
+				
+
+				this.classList.add('active')
+				document.getElementById('featured').src = this.src
+			})
+		}
+
+
+		let buttonRight = document.getElementById('slideRight');
+		let buttonLeft = document.getElementById('slideLeft');
+
+		buttonLeft.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft -= 180
+		})
+
+		buttonRight.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft += 180
+		})
+
+
+	</script>
+    
+</body>
+</html>
