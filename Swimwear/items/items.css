@@ -254,8 +254,8 @@ ul li::marker {
     }
 
     .thumbnail{
-        max-width: 30%;
-        max-height: 40%;
+        max-width: 40%;
+        max-height: 70%;
     
     }
 
@@ -286,13 +286,21 @@ ul li::marker {
 
 }
 @media (max-width:832px){
+    .thumbnail{
+        max-width: 40%;
+        max-height: 70%;
     
+    }
 }
 
 
 @media (max-width:615px){
 
+    .thumbnail{
+        max-width: 40%;
+        max-height: 70%;
     
+    }
     .text{
         margin-top:12px;
     }
